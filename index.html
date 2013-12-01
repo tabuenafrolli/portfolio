@@ -2,38 +2,61 @@
 <html>
 <head>
   <title>LB</title>
-  <link rel="stylesheet" type="text/css" href="css/foundation.css"/>
-  <script type="text/javascript" src="js/foundation.min.js"></script>
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/modernizr.js"></script>
+  <meta name="LB" content="Portfolio">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/tuktuk.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/tuktuk.css"/>
+  <link rel="stylesheet" type="text/css" href="css/tuktuk.icons.css"/>
+  <link rel="stylesheet" type="text/css" href="css/tuktuk.theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+  <link rel="stylesheet" type="text/css" href="css/section_one.css"/>
 </head>
-<body class="antialiased hide-extras" cz-shortcut-listen="true">
+<body>
 
-  <div class="large-3 medium-4 columns">
-    <div class="hide-for-small">
-      <div class="sidebar">
-        <nav>
-      <ul class="side-nav">
-        <li><a href="#">WORK</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">RESUME</a></li>
+  <header>
+    <nav>
+      <a href="#" class="icon menu"></a>
+      <ul>
+        <li><a href="#">About Lo</a></li>
+        <li><a href="#">Web Dev Lo</a></li>
+        <li><a href="#">Journalist Lo</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    </div>
-  </div>
-</div>
+  </header>
 
-<div class="large-9 medium-8 columns">
-<div class="row">
-  <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-    <li>That's awesome</li>
-    <li>cool</li>
-  </ul>
-</div>
-<ul class="small-block-grid-2">
-  <li>That's awesome</li>
-  <li>cool</li>
-</ul>
-</div>
-</body>
-</html>
+  <section class="padding bck lightest text center">
+    <div class="row padding-top">
+     <div class="column_3">
+       <img src="images/image001.png" class="responsive rounded margin-bottom">
+     </div>
+     <div class="column_5 section_one_portfolio">
+      <h1 class="text bold left">.Portfolio(){</h1>
+    </div>
+    <div class="row padding-top">
+      <div class="column_8 ">
+        <a href="#webdev"><h2 class="text left"><span class="icon desktop"> webDeveloper();</span></h2></a><br/>
+        <a href="#journo"><h2 class="text left"><span class="icon camera"> multimediaJourno();</span></h2></a><br/>
+        <a href="#about"><h2 class="text left"><img src="images/stuff.jpg" class="img_about"> about();</h2></a><br/>
+        <h1 class="text bold left ">};</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="lightest text center">
+    <div class="row text center book">
+      <div class="column_10 offset_1">
+        <h1 class="text bold left"> webDeveloper()<h1> <a name="webdev"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="padding bck lightest text center">
+      <a name="journo"></a>
+    </section>
+    <section class="padding bck lightest text center">
+      <a name="about"></a>
+    </section>
+  </body>
+  </html>
