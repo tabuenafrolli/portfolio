@@ -3,14 +3,16 @@
 <head>
   <title>LB</title>
   <meta name="LB" content="Portfolio">
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript" src="js/tuktuk.js"></script>
-  <script type="text/javascript" src="js/scroll.js"></script>
   <link rel="stylesheet" type="text/css" href="css/tuktuk.css"/>
   <link rel="stylesheet" type="text/css" href="css/tuktuk.icons.css"/>
   <link rel="stylesheet" type="text/css" href="css/tuktuk.theme.css"/>
   <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
-  <link rel="stylesheet" type="text/css" href="css/section_one.css"/>
+  <link rel="stylesheet" type="text/css" href="css/sections.css"/>
+  <link rel="stylesheet" type="text/css" href="css/swipe.css"/>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/tuktuk.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/swipe.js"></script>
 </head>
 <body>
 
@@ -18,10 +20,10 @@
     <nav>
       <a href="#" class="icon menu"></a>
       <ul>
-        <li><a href="#">About Lo</a></li>
-        <li><a href="#">Web Dev Lo</a></li>
-        <li><a href="#">Journalist Lo</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About Lo</a></li>
+        <li><a href="#webdev">Web Dev Lo</a></li>
+        <li><a href="#journo">Journalist Lo</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -46,17 +48,33 @@
 
   <section class="lightest text center">
     <div class="row text center book">
-      <div class="column_10 offset_1">
-        <h1 class="text bold left"> webDeveloper()<h1> <a name="webdev"></a>
+      <div class="column_8 offset_2">
+        <a name="webdev"></a>
+        <h1 class="text bold center"> webDeveloper()<h1>
         </div>
       </div>
-    </section>
+      <div class="column_4 text center">
+        <div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe'>
+          <div class='swipe-wrap'>
+            <div><img src="images/soundframe.jpg"></div>
+            <div><img src="images/soundframe.jpg"></div>
+            <div><img src="images/soundframe.jpg"></div>
+          </div>
+          <div style='text-align:center;padding-top:20px;'>
 
-    <section class="padding bck lightest text center">
-      <a name="journo"></a>
-    </section>
-    <section class="padding bck lightest text center">
-      <a name="about"></a>
-    </section>
-  </body>
-  </html>
+  <button onclick='mySwipe.prev()'>prev</button>
+  <button onclick='mySwipe.next()'>next</button>
+
+</div>
+        </div>
+      </div>
+        </section>
+
+        <section class="padding bck lightest text center">
+          <a name="journo"></a>
+        </section>
+        <section class="padding bck lightest text center">
+          <a name="about"></a>
+        </section>
+      </body>
+      </html>
