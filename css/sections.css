@@ -2,12 +2,13 @@
 
 h1{
   color: black;
-  font-size: 70px;
+  font-size: 50px;
   letter-spacing: 10px;
   font-family: 'Loved by the King', cursive;
   font-weight: 400;
 
 }
+
 
 h2{
   color: black;
@@ -16,7 +17,6 @@ h2{
   font-family: 'Loved by the King', cursive;
   font-weight: 400;
 }
-
 
 .anchor{
   padding-top: 70px;
@@ -29,6 +29,13 @@ h2{
 
 }
 
+.section_two_web{
+  background-color: black;
+}
+.section_two_web h1{
+  color: white;
+}
+
 .img_about{
   height: 50px;
   width: auto;
@@ -37,9 +44,16 @@ h2{
 
 }
 
+.padding-img{
+  padding-top: 120px;
+}
+
+.padding-img-two{
+  padding-top: 140px;
+}
 
 /*MEDIA QUERY*/
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 960px) {
 
   h1{
     font-size: 40px;
@@ -49,7 +63,7 @@ h2{
   }
 }
 
-@media only screen and (max-width : 320px){
+@media only screen and (max-width : 470px){
 
 h1{
     font-size: 30px;

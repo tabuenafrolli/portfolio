@@ -3,7 +3,8 @@
 <head>
   <title>LB</title>
   <meta name="LB" content="Portfolio">
-   <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/tuktuk.css"/>
   <link rel="stylesheet" type="text/css" href="css/tuktuk.icons.css"/>
   <link rel="stylesheet" type="text/css" href="css/tuktuk.theme.css"/>
@@ -14,9 +15,13 @@
   <script type="text/javascript" src="js/tuktuk.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/swipe.js"></script>
+  <script type="text/javascript" src="js/audio.js"></script>
 </head>
-<body>
 
+
+
+<body>
+  <!-- header with nav -->
   <header>
     <nav>
       <a href="#" class="icon menu"></a>
@@ -25,21 +30,31 @@
           <li><a href="#about">About Lo</a></li>
           <li><a href="#webdev">Web Dev Lo</a></li>
           <li><a href="#journo">Journalist Lo</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact Lo</a></li>
         </ul>
       </nav>
     </header>
 
+<!-- Section 1 -->
+    <!-- For all devices -->
     <section class="padding bck lightest text center">
-      <div class="row padding-top">
+     <a class="anchor" name="#"></a>
+     <div class="row padding-top">
        <div class="column_3">
          <img src="images/Image001.jpg" class="responsive rounded margin-bottom">
        </div>
-       <div class="column_5 section_one_portfolio">
-        <h1 class="text bold left">.Portfolio(){</h1>
+
+       <!-- For Tablets and Screens -->
+       <div class="column_8 section_one_portfolio hide-phone">
+        <h1 class="text bold left">.Portfolio(Lauren Benichou){</h1>
       </div>
-      <div class="row padding-top">
-        <div class="column_8 ">
+      <!-- For phones -->
+      <div class="column_8 section_one_portfolio show-phone">
+        <h1 class="text bold center">Lauren {Lo} Benichou</h1>
+      </div>
+      <!-- For tablets and screens -->
+      <div class="row hide-phone">
+        <div class="column_8 offset_4 ">
           <a href="#webdev"><h2 class="text left"><span class="icon desktop"> webDeveloper();</span></h2></a><br/>
           <a href="#journo"><h2 class="text left"><span class="icon camera"> multimediaJourno();</span></h2></a><br/>
           <a href="#about"><h2 class="text left"><img src="images/stuff.jpg" class="img_about"> about();</h2></a><br/>
@@ -48,37 +63,102 @@
       </div>
     </section>
 
-
-    <section class="padding bck lightest text center">
+<!-- Section 2 -->
+    <!-- for all devices -->
+    <section class="padding bck text center section_two_web">
       <div class="row text center book">
         <div class="column_8 offset_2">
          <a class="anchor" name="webdev"></a>
          <h1 class="text bold center"> webDeveloper()<h1>
          </div>
        </div>
-       <div class="column_4 text center">
-        <div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe'>
-          <div class='swipe-wrap'>
-            <div><img src="images/soundframe.jpg"></div>
-            <div><img src="images/soundframe.jpg"></div>
-            <div><img src="images/soundframe.jpg"></div>
-          </div>
-          <div style='text-align:center;padding-top:20px;'>
-
-            <button onclick='mySwipe.prev()'>prev</button>
-            <button onclick='mySwipe.next()'>next</button>
-
-          </div>
+       <!-- For all devices -->
+       <div id='slider' class='swipe'>
+        <div class='swipe-wrap'>
+          <figure>
+            <div class="wrap">
+              <div class="image" style="background:url(images/soundframe2.jpg) center no-repeat; background-size:cover;">
+              </div>
+              <div class="info-slider">
+                <div class="column_5">
+                  <h4 class="text bold left">SoundFrame</h4>
+                  <p class="text left"> A new way to tell stories using the Soundcloud API and Leaflet.</p>
+                </div>
+                <a class="link-image" href="#"><span class="icon github"></span></a>
+                <a class="link-image" href="#"><span class="icon link"></span></a>
+              </div>
+            </div>
+          </figure>
+          <figure>
+            <div class="wrap">
+              <div class="image" style="background:url(images/tinytalk.jpg) center no-repeat; background-size:cover;"></div>
+              <div class="info-slider">
+                <div class="column_5">
+                  <h4 class="text bold left">TinyTalk</h4>
+                  <p class="text left"> The smallest social network, using Devise, Isotope, Masonery.</p>
+                </div>
+                <a class="link-image" href="#"><span class="icon github"></span></a>
+                <a class="link-image" href="#"><span class="icon link"></span></a>
+              </div>
+            </div>
+          </figure>
+          <figure>
+            <div class="wrap">
+              <div class="image" style="background:url(images/soundframe.jpg) center no-repeat; background-size:cover;"></div>
+            </div>
+          </figure>
+          <figure>
+            <div class="wrap">
+              <div class="image" style="background:url(images/soundframe.jpg) center no-repeat; background-size:cover;"></div>
+            </div>
+          </figure>
         </div>
+      </div>
+      <div style='text-align:center;padding-top:20px;'>
+        <span class="icon left-sign slider-button" onclick='mySwipe.prev()'></span>
+        <span class="icon right-sign slider-button" onclick='mySwipe.next()'></span>
       </div>
     </section>
 
+<!-- Section 3 -->
     <section class="padding bck lightest text center">
-      <a class="anchor" name="journo"></a>
-    </section>
+      <div class="row text center book">
+        <div class="column_8 offset_2">
+         <a class="anchor" name="journo"></a>
+         <h1 class="text  center"> multimediaJournalist()<h1>
+         </div>
+       </div>
+       <div class="row">
+       <div class="column_4 padding-img">
+        <audio id="radio" src="audio/radio.mp3">
+             </audio>
+        <a id="radio-audio" href=""><img class="responsive padding-left padding-top padding-right" src="images/radio1.jpg" onmouseover="this.src='images/radio2.jpg'" onmouseout="this.src='images/radio1.jpg'">
+       </a>
+       </div>
+       <div class="column_4">
+        <audio id="tv" src="audio/TV.mp3">
+            </audio>
+        <a id="tv-audio" href=""><img class="responsive padding-left padding-top padding-right" src="images/TV1.jpg" onmouseover="this.src='images/TV2.jpg'" onmouseout="this.src='images/TV1.jpg'"></a>
+       </div>
+       <div class="column_4 padding-img-two">
+        <audio id="newspaper" src="audio/newspaper.mp3">
+            </audio>
+        <a id="newspaper-audio" href=""><img class="responsive padding-left padding-top padding-right" src="images/newspaper1.jpg" onmouseover="this.src='images/newspaper2.jpg'" onmouseout="this.src='images/newspaper1.jpg'"></a>
+       </div>
+     </div>
+       </section>
 
-    <section class="padding bck lightest text center">
-      <a class="anchor" name="about"></a>
-    </section>
-  </body>
-  </html>
+       <section class="padding bck lightest text center">
+        <a class="anchor" name="about"></a>
+      </section>
+    </body>
+    </html>
+    <script>
+
+// pure JS
+window.mySwipe = Swipe(document.getElementById('slider'));
+// with jQuery
+// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+</script>
+

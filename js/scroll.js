@@ -17,4 +17,8 @@ $(document).ready(function(){
     scrollToAnchor('about');
   });
 
+  $("a[href='#']").click(function() {
+    scrollToAnchor('#');
+  });
+
 });
