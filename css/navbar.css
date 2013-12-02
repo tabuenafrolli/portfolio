@@ -23,6 +23,13 @@ nav {
 
 }
 
+.quick-link{
+  float: left;
+  padding: 20px;
+  line-height: 20px;
+
+}
+
 .icon.menu {
 
   display: none;
