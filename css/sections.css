@@ -18,12 +18,12 @@ h2{
   font-weight: 400;
 }
 
-.link{
+.titles{
   background-color: white;
   padding: 10px;
 }
 
-.link:hover{
+.titles:hover{
   background-color: black;
   color: white;
 }
