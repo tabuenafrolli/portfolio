@@ -23,7 +23,7 @@ h2{
 }
 
 .titles:hover{
-  background-color: black;
+  background-color: rgb(60, 60 ,60);
   color: white;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -44,7 +44,7 @@ h2{
 }
 
 .section_two_four{
-  background-color: black;
+  background-color: rgb(60, 60 ,60);
 }
 .section_two_four h1{
   color: white;
